@@ -1,0 +1,202 @@
+<timeslots>
+    <timeslot time="830">
+        <booking>
+            <room>SW5-1840</room>
+            <day>Friday</day>
+            <course>BLAW3600</course>
+            <instructor>Catherine Ryan</instructor>
+            <type>LEC</type>
+        </booking>
+    </timeslot>
+    <timeslot time="930">
+        <booking>
+            <room>SE12-323</room>
+            <day>Monday</day>
+            <course>COMP4985</course>
+            <instructor>Aman Abdulla</instructor>
+            <type>LAB</type>
+        </booking>
+        <booking>
+            <room>SE12-323</room>
+            <day>Tuesday</day>
+            <course>COMP4981</course>
+            <instructor>Aman Abdulla</instructor>
+            <type>LAB</type>
+        </booking>
+         <booking>
+            <room>SE12-323</room>
+            <day>Wednesday</day>
+            <course>COMP4985</course>
+            <instructor>Aman Abdulla</instructor>
+            <type>LEC</type>
+        </booking>
+        <booking>
+            <room>SE12-323</room>
+            <day>Thursday</day>
+            <course>COMP4981</course>
+            <instructor>Aman Abdulla</instructor>
+            <type>LEC</type>
+        </booking>
+        <booking>
+            <room>SW5-1840</room>
+            <day>Friday</day>
+            <course>BLAW3600</course>
+            <instructor>Catherine Ryan</instructor>
+            <type>LEC</type>
+        </booking>
+    </timeslot>
+    <timeslot time="1030">
+        <booking>
+            <room>SE12-323</room>
+            <day>Monday</day>
+            <course>COMP4985</course>
+            <instructor>Aman Abdulla</instructor>
+            <type>LAB</type>
+        </booking>
+        <booking>
+            <room>SE12-323</room>
+            <day>Tuesday</day>
+            <course>COMP4981</course>
+            <instructor>Aman Abdulla</instructor>
+            <type>LAB</type>
+        </booking>
+         <booking>
+            <room>SE12-323</room>
+            <day>Wednesday</day>
+            <course>COMP4985</course>
+            <instructor>Aman Abdulla</instructor>
+            <type>LEC</type>
+        </booking>
+        <booking>
+            <room>SE12-323</room>
+            <day>Thursday</day>
+            <course>COMP4981</course>
+            <instructor>Aman Abdulla</instructor>
+            <type>LEC</type>
+        </booking>
+    </timeslot>
+    <timeslot time="1130">
+        <booking>
+            <room>SW1-1205</room>
+            <day>Monday</day>
+            <course>COMP4735</course>
+            <instructor>Mirela Gutica</instructor>
+            <type>LEC</type>
+        </booking>
+        <booking>
+            <room>SW5-1850</room>
+            <day>Tuesday</day>
+            <course>COMP4560</course>
+            <instructor>Brenda Fine</instructor>
+            <type>LEC</type>
+        </booking>
+        <booking>
+            <room>SE12-323</room>
+            <day>Wednesday</day>
+            <course>COMP4985</course>
+            <instructor>Aman Abdulla</instructor>
+            <type>LEC</type>
+        </booking>
+        <booking>
+            <room>SW3-1710</room>
+            <day>Thusday</day>
+            <course>COMP4735</course>
+            <instructor>Mirela Gutica</instructor>
+            <type>LEC</type>
+        </booking>
+    </timeslot>
+    <timeslot time="1230">
+        <booking>
+            <room>SW9-127</room>
+            <day>Monday</day>
+            <course>BLAW3600</course>
+            <instructor>Catherine Ryan</instructor>
+            <type>LAB</type>
+        </booking>
+        <booking>
+            <room>SE12-323</room>
+            <day>Wednesday</day>
+            <course>COMP4981</course>
+            <instructor>Aman Abdulla</instructor>
+            <type>LEC</type>
+        </booking>
+        <booking>
+            <room>SW3-1750</room>
+            <day>Friday</day>
+            <course>COMP4560</course>
+            <instructor>Brenda Fine</instructor>
+            <type>LEC</type>
+        </booking>
+    </timeslot>
+    <timeslot time="1330">
+        <booking>
+            <room>SW1-1205</room>
+            <day>Wednesday</day>
+            <course>COMP4735</course>
+            <instructor>Mirela Gutica</instructor>
+            <type>LEC</type>
+        </booking>
+        <booking>
+            <room>SW9-127</room>
+            <day>Monday</day>
+            <course>BLAW3600</course>
+            <instructor>Catherine Ryan</instructor>
+            <type>LAB</type>
+        </booking>
+    </timeslot>
+    <timeslot time="1430">
+        <booking>
+            <room>SW5-1840</room>
+            <day>Tuesday</day>
+            <course>COMP4711</course>
+            <instructor>James Parry</instructor>
+            <type>LEC</type>
+        </booking>
+    </timeslot>
+    <timeslot time="1530">
+        <booking>
+            <room>SE12-320</room>
+            <day>Monday</day>
+            <course>COMP4560</course>
+            <instructor>Joseph Lo</instructor>
+            <type>LAB</type>
+        </booking>
+        <booking>
+            <room>SE12-321</room>
+            <day>Tuesday</day>
+            <course>COMP4711</course>
+            <instructor>James Parry</instructor>
+            <type>LAB</type>
+        </booking>
+        <booking>
+            <room>SE12-322</room>
+            <day>Thursday</day>
+            <course>COMP4735</course>
+            <instructor>Mathew Linder</instructor>
+            <type>LAB</type>
+        </booking>
+    </timeslot>
+    <timeslot time="1630">
+        <booking>
+            <room>SE12-320</room>
+            <day>Monday</day>
+            <course>COMP4560</course>
+            <instructor>Joseph Lo</instructor>
+            <type>LAB</type>
+        </booking>
+        <booking>
+            <room>SE12-321</room>
+            <day>Tuesday</day>
+            <course>COMP4711</course>
+            <instructor>James Parry</instructor>
+            <type>LAB</type>
+        </booking>
+        <booking>
+            <room>SE12-322</room>
+            <day>Thursday</day>
+            <course>COMP4735</course>
+            <instructor>Mathew Linder</instructor>
+            <type>LAB</type>
+        </booking>
+    </timeslot>
+</timeslots>

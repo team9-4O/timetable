@@ -1,0 +1,194 @@
+<days>
+	<dayinner code="Monday">
+		<booking>
+			<room>SE12-323</room>
+			<time>930</time>
+			<course>COMP4985</course>
+			<instructor>Aman Abdulla</instructor>
+			<type>Lab</type>
+		</booking>
+		<booking>
+			<room>SE12-323</room>
+			<time>1030</time>
+			<course>COMP4985</course>
+			<instructor>Aman Abdulla</instructor>
+			<type>Lab</type>
+		</booking>
+		<booking>
+			<room>SW1-1205</room>
+			<time>1130</time>
+			<course>COMP4735</course>
+			<instructor>Mirela Gutica</instructor>
+			<type>Lec</type>
+		</booking>
+		<booking>
+			<room>SW9-127</room>
+			<time>1230</time>
+			<course>BLAW3600</course>
+			<instructor>Catherine Ryan</instructor>
+			<type>Lab</type>
+		</booking>
+		<booking>
+			<room>SW9-127</room>
+			<time>1330</time>
+			<course>BLAW3600</course>
+			<instructor>Catherine Ryan</instructor>
+			<type>Lab</type>
+		</booking>
+		<booking>
+			<room>SE12-320</room>
+			<time>1530</time>
+			<course>COMP4560</course>
+			<instructor>Joseph Lo</instructor>
+			<type>Lab</type>
+		</booking>
+		<booking>
+			<room>SE12-320</room>
+			<time>1630</time>
+			<course>COMP4560</course>
+			<instructor>Joseph Lo</instructor>
+			<type>Lab</type>
+		</booking>
+	</dayinner>
+	<dayinner code="Tuesday">
+		<booking>
+			<room>SE12-323</room>
+			<time>930</time>
+			<course>COMP4981</course>
+			<instructor>Aman Abdulla</instructor>
+			<type>Lab</type>
+		</booking>
+		<booking>
+			<room>SE12-323</room>
+			<time>1030</time>
+			<course>COMP4981</course>
+			<instructor>Aman Abdulla</instructor>
+			<type>Lab</type>
+		</booking>
+		<booking>
+			<room>SW5-1850</room>
+			<time>1130</time>
+			<course>COMP4560</course>
+			<instructor>Brenda Fine</instructor>
+			<type>Lec</type>
+		</booking>
+		<booking>
+			<room>SW5-1840</room>
+			<time>1430</time>
+			<course>COMP4711</course>
+			<instructor>James Parry</instructor>
+			<type>Lec</type>
+		</booking>
+		<booking>
+			<room>SE12-321</room>
+			<time>1530</time>
+			<course>COMP4711</course>
+			<instructor>James Parry</instructor>
+			<type>Lab</type>
+		</booking>
+		<booking>
+			<room>SE12-321</room>
+			<time>1630</time>
+			<course>COMP4711</course>
+			<instructor>James Parry</instructor>
+			<type>Lab</type>
+		</booking>
+	</dayinner>
+	<dayinner code="Wednesday">
+		<booking>
+			<room>SE12-323</room>
+			<time>930</time>
+			<course>COMP4985</course>
+			<instructor>Aman Abdulla</instructor>
+			<type>Lec</type>
+		</booking>
+		<booking>
+			<room>SE12-323</room>
+			<time>1030</time>
+			<course>COMP4985</course>
+			<instructor>Aman Abdulla</instructor>
+			<type>Lec</type>
+		</booking>
+		<booking>
+			<room>SE12-323</room>
+			<time>1130</time>
+			<course>COMP4985</course>
+			<instructor>Aman Abdulla</instructor>
+			<type>Lec</type>
+		</booking>
+		<booking>
+			<room>SE12-323</room>
+			<time>1230</time>
+			<course>COMP4981</course>
+			<instructor>Aman Abdulla</instructor>
+			<type>Lec</type>
+		</booking>
+		<booking>
+			<room>SW1-1205</room>
+			<time>1330</time>
+			<course>COMP4735</course>
+			<instructor>Mirela Gutica</instructor>
+			<type>Lec</type>
+		</booking>
+	</dayinner>
+	<dayinner code="Thursday">
+		<booking>
+			<room>SE12-323</room>
+			<time>930</time>
+			<course>COMP4981</course>
+			<instructor>Aman Abdulla</instructor>
+			<type>Lec</type>
+		</booking>
+		<booking>
+			<room>SE12-323</room>
+			<time>1030</time>
+			<course>COMP4981</course>
+			<instructor>Aman Abdulla</instructor>
+			<type>Lec</type>
+		</booking>
+		<booking>
+			<room>SW3-1710</room>
+			<time>1130</time>
+			<course>COMP4735</course>
+			<instructor>Mirela Gutica</instructor>
+			<type>Lec</type>
+		</booking>
+		<booking>
+			<room>SE12-322</room>
+			<time>1530</time>
+			<course>COMP4735</course>
+			<instructor>Mathew Linder</instructor>
+			<type>Lab</type>
+		</booking>
+		<booking>
+			<room>SE12-322</room>
+			<time>1630</time>
+			<course>COMP4735</course>
+			<instructor>Mathew Linder</instructor>
+			<type>Lab</type>
+		</booking>
+	</dayinner>
+	<dayinner code="Friday">
+		<booking>
+			<room>SW5-1840</room>
+			<time>830</time>
+			<course>BLAW3600</course>
+			<instructor>Catherine Ryan</instructor>
+			<type>Lec</type>
+		</booking>
+		<booking>
+			<room>SW5-1840</room>
+			<time>930</time>
+			<course>BLAW3600</course>
+			<instructor>Catherine Ryan</instructor>
+			<type>Lec</type>
+		</booking>
+		<booking>
+			<room>SW3-1750</room>
+			<time>1230</time>
+			<course>COMP4560</course>
+			<instructor>Brenda Fine</instructor>
+			<type>Lec</type>
+		</booking>
+	</dayinner>
+</days>	
