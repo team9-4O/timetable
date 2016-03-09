@@ -1,9 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<!DOCTYPE courses SYSTEM "timetable.dtd">
-
-booking room day course instr type
 <timeslots>
-
     <timeslot time="830">
         <booking>
             <room>SW5-1840</room>
@@ -13,7 +8,6 @@ booking room day course instr type
             <type>LEC</type>
         </booking>
     </timeslot>
-
     <timeslot time="930">
         <booking>
             <room>SE12-323</room>
@@ -51,7 +45,6 @@ booking room day course instr type
             <type>LEC</type>
         </booking>
     </timeslot>
-
     <timeslot time="1030">
         <booking>
             <room>SE12-323</room>
@@ -206,4 +199,4 @@ booking room day course instr type
             <type>LAB</type>
         </booking>
     </timeslot>
-
+</timeslots>

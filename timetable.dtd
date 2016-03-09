@@ -2,34 +2,34 @@
 
 <!-- Root Element -->
 <!ELEMENT schedule (courses, days, timeslots)>
-<!ATTLIST schedule set #REQUIRED>
-<!ATTLIST schedule term #REQUIRED>
+<!ATTLIST schedule set CDATA #REQUIRED>
+<!ATTLIST schedule term CDATA #REQUIRED>
 
 <!-- Courses -->
-<!ELEMENT courses (course*)>
-<!ELEMENT course (booking*)>
-<!ATTLIST course name #REQUIRED>
+<!ELEMENT courses (courseinner*)>
+<!ELEMENT courseinner (booking*)>
+<!ATTLIST courseinner name CDATA #REQUIRED>
 
 <!-- Days -->
-<!ELEMENT days (day*)>
-<!ELEMENT day (booking*)>
-<!ATTLIST day code (Monday|Tuesday|Wednesday|Thursday|Friday) #REQUIRED>
+<!ELEMENT days (dayinner*)>
+<!ELEMENT dayinner (booking*)>
+<!ATTLIST dayinner code (Monday|Tuesday|Wednesday|Thursday|Friday) #REQUIRED>
 
 <!--Timeslots -->
 <!ELEMENT timeslots (timeslot*)>
 <!ELEMENT timeslot (booking*)>
-<!ATTLIST timeslot type (830|930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED>
+<!ATTLIST timeslot time (830|930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED>
 
 
 
 <!-- Bookings -->
 <!ELEMENT booking (
-        instructor,
         room,
-        type,
+        day?,        
         time?,
-        day?,
-        course?
+        course?,
+        instructor,
+        type     
         )>
 <!ELEMENT instructor (#PCDATA)>
 <!ELEMENT room (#PCDATA)>
