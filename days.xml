@@ -1,9 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<!DOCTYPE order SYSTEM 'timetable.dtd'>
-
-
 <days>
-	<day code="Monday">
+	<dayinner code="Monday">
 		<booking>
 			<room>SE12-323</room>
 			<time>930</time>
@@ -53,11 +49,8 @@
 			<instructor>Joseph Lo</instructor>
 			<type>Lab</type>
 		</booking>
-	</day>
-</days>
-
-<days>
-	<day code="Tuesday">
+	</dayinner>
+	<dayinner code="Tuesday">
 		<booking>
 			<room>SE12-323</room>
 			<time>930</time>
@@ -91,7 +84,7 @@
 			<time>1530</time>
 			<course>COMP4711</course>
 			<instructor>James Parry</instructor>
-			<code>Lab</type>
+			<type>Lab</type>
 		</booking>
 		<booking>
 			<room>SE12-321</room>
@@ -100,11 +93,8 @@
 			<instructor>James Parry</instructor>
 			<type>Lab</type>
 		</booking>
-	</day>
-</days>
-
-<days>
-	<day code="Wednesday">
+	</dayinner>
+	<dayinner code="Wednesday">
 		<booking>
 			<room>SE12-323</room>
 			<time>930</time>
@@ -140,11 +130,8 @@
 			<instructor>Mirela Gutica</instructor>
 			<type>Lec</type>
 		</booking>
-	</day>
-</days>
-
-<days>
-	<day code="Thursday">
+	</dayinner>
+	<dayinner code="Thursday">
 		<booking>
 			<room>SE12-323</room>
 			<time>930</time>
@@ -180,12 +167,8 @@
 			<instructor>Mathew Linder</instructor>
 			<type>Lab</type>
 		</booking>
-	</day>
-</days>
-
-<days>
-	<day code="Friday">
-		<day>Friday</day>
+	</dayinner>
+	<dayinner code="Friday">
 		<booking>
 			<room>SW5-1840</room>
 			<time>830</time>
@@ -207,5 +190,5 @@
 			<instructor>Brenda Fine</instructor>
 			<type>Lec</type>
 		</booking>
-	</day>
+	</dayinner>
 </days>	

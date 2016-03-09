@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<!DOCTYPE courses SYSTEM "timetable.dtd">
 <courses>
-    <course name="BLAW3600">
+    <courseinner name="BLAW3600">
         <booking>
             <room>SW5-1840</room>
             <day>Friday</day>
@@ -16,8 +14,8 @@
             <instructor>Catherine Ryan</instructor>
             <type>LAB</type>
         </booking>
-    </course>
-    <course name="COMP4985">
+    </courseinner>
+    <courseinner name="COMP4985">
         <booking>
             <room>SE12-323</room>
             <day>Monday</day>
@@ -39,8 +37,8 @@
             <instructor>Aman Abdulla</instructor>
             <type>LEC</type>
         </booking>
-    </course>
-    <course name="COMP4981">
+    </courseinner>
+    <courseinner name="COMP4981">
         <booking>
             <room>SE12-323</room>
             <day>Tuesday</day>
@@ -62,8 +60,8 @@
             <instructor>Aman Abdulla</instructor>
             <type>LAB</type>
         </booking>
-    </course>
-    <course name="COMP4560">
+    </courseinner>
+    <courseinner name="COMP4560">
         <booking>
             <room>SE12-320</room>
             <day>Monday</day>
@@ -85,8 +83,8 @@
             <instructor>Brenda Fine</instructor>
             <type>LEC</type>
         </booking>
-    </course>
-    <course name="COMP4711">
+    </courseinner>
+    <courseinner name="COMP4711">
         <booking>
             <room>SW5-1840</room>
             <day>Tuesday</day>
@@ -102,8 +100,8 @@
             <instructor>James Parry</instructor>
             <type>LAB</type>
         </booking>
-    </course>
-    <course name="COMP4735">
+    </courseinner>
+    <courseinner name="COMP4735">
         <booking>
             <room>SW1-1205</room>
             <day>Monday</day>
@@ -125,13 +123,5 @@
             <instructor>Mathew Linder</instructor>
             <type>LAB</type>
         </booking>
-    </course>
+    </courseinner>
 </courses>
-
-<booking>
-            <room></room>
-            <day></day>
-            <time></time>
-            <instructor></instructor>
-            <type></type>
-        </booking>
