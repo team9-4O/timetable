@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Root Element -->
+<!ELEMENT schedule (courses, days, timeslots)>
+<!ATTLIST schedule set CDATA #REQUIRED>
+<!ATTLIST schedule term CDATA #REQUIRED>
+
+<!-- Courses -->
+<!ELEMENT courses (courseinner*)>
+<!ELEMENT courseinner (booking*)>
+<!ATTLIST courseinner name CDATA #REQUIRED>
+
+<!-- Days -->
+<!ELEMENT days (dayinner*)>
+<!ELEMENT dayinner (booking*)>
+<!ATTLIST dayinner code (Monday|Tuesday|Wednesday|Thursday|Friday) #REQUIRED>
+
+<!--Timeslots -->
+<!ELEMENT timeslots (timeslot*)>
+<!ELEMENT timeslot (booking*)>
+<!ATTLIST timeslot time (830|930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED>
+
+
+
+<!-- Bookings -->
+<!ELEMENT booking (
+        room,
+        day?,        
+        time?,
+        course?,
+        instructor,
+        type     
+        )>
+<!ELEMENT instructor (#PCDATA)>
+<!ELEMENT room (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT course (#PCDATA)>
