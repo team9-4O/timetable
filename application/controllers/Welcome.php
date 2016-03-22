@@ -1,25 +1,47 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+/**
+ * Our homepage.
+ * 
+ * Present a summary of the completed orders.
+ * 
+ * controllers/welcome.php
+ *
+ * ------------------------------------------------------------------------
+ */
+class Welcome extends Application {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
-	public function index()
-	{
-		$this->load->view('welcome_message');
-	}
+    function __construct() {
+        parent::__construct();
+    }
+
+    //-------------------------------------------------------------
+    //  The normal pages
+    //-------------------------------------------------------------
+
+    function index() {
+        $this->load->model('orders');
+        $this->data['title'] = 'Jim\'s Joint!';
+        $this->data['pagebody'] = 'welcome';
+
+        // Get all the completed orders
+        $completed = $this->orders->some('status', 'c');
+
+        // Build a multi-dimensional array for reporting
+        $orders = array();
+        foreach ($completed as $order) {
+            $this1 = array(
+                'num' => $order->num,
+                'datetime' => $order->date,
+                'amount' => $order->total
+            );
+            $orders[] = $this1;
+        }
+
+        // and pass these on to the view
+        $this->data['orders'] = $orders;
+        
+        $this->render();
+    }
+
 }
