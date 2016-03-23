@@ -20,7 +20,7 @@ class Welcome extends Application {
     //-------------------------------------------------------------
 
     function index() {
-        $this->load->model('orders');
+
         $this->data['title'] = 'TimeTable';
         $this->data['pagebody'] = 'welcome';
         $this->load->model('timetable');

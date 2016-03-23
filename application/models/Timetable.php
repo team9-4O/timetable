@@ -93,5 +93,15 @@ class Booking{
    public $day;
    public $course;
    
+     public function __construct($booking){
+
+       
+       $this->instructor = $booking->instructor;
+       $this->room = $booking->room;
+       $this->type = $booking->type;
+       $this->time = $booking->time;
+       $this->day = $booking->day;
+       $this->course = $booking->course;
+   }
    
 }
