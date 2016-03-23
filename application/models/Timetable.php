@@ -19,40 +19,23 @@ class Timetable extends MY_Model {
         echo print_r($this->xml);    
         foreach($this->xml->days->dayinner as $day){
             foreach($day->booking as $book){
-                $ok = array();
-                $ok['instructor'] = $day['code'];
-                $ok['room'] = $book['room'];
-                $ok['time'] = $book['time'];
-                $ok['course'] = $book['course'];
-                $ok['instructor'] = $book['instructor'];
-                $ok['type'] = $book['type'];
-                $this->daysofweek[] = new Booking($ok);
+                $book->day = $day['code'];
+                $this->daysofweek[] = new Booking($book);
                 
             }
         }
          foreach($this->xml->courses->courseinner as $course){
             foreach($course->booking as $book){
-                $ok = array();
-                $ok['course'] = $course['name'];
-                $ok['room'] = $book['room'];
-                $ok['time'] = $book['time'];
-                $ok['instructor'] = $book['instructor'];
-                $ok['type'] = $book['type'];
-                $this->courses[] = new Booking($ok);
+                $book->course = $course['name'];
+                $this->courses[] = new Booking($book);
                 
             }
         }
    
          foreach($this->xml->timeslots->timeslot as $time){
             foreach($time->booking as $book){
-                $ok = array();
-                $ok['time'] = $time['time'];
-                $ok['room'] = $book['room'];
-                $ok['day'] = $book['day'];
-                $ok['course'] = $book['course'];
-                $ok['instructor'] = $book['instructor'];
-                $ok['type'] = $book['type'];
-                $this->timeslots[] = new Booking($ok);
+                $book->time = $time['time'];
+                $this->timeslots[] = new Booking($book);
                 
             }
         }
