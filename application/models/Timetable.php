@@ -50,7 +50,7 @@ class Timetable extends MY_Model {
     }
     public function getCourses(){
         return $this->courses;
-            }
+    }
     public function getTimes(){
         return $this->timeslots;
     }
