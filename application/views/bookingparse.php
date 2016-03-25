@@ -1,5 +1,5 @@
-<h2>Booking</h2>
 <table>
+    <th>{howdoiparsethis}</th>
         <tr>
             <td>Instructor</td>
             <td>{instructor}</td>

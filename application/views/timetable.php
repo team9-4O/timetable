@@ -1,6 +1,14 @@
 
 <div class ="row container">
+    <div>
+    <h2>{sbingo}</h2>
     
+    {showsingle}
+    {showday}
+    {showclass}
+    {showtimeslot}
+    
+</div>
     <div class = "col-md-12">
        <h3>{timetitle}</h3>
        <table class ="table table-responsive">
