@@ -1,7 +1,8 @@
-{pagetitle}
-<div class ="row container">
-    <div class = "table-responsive">
 
+<div class ="row container">
+    
+    <div class = "col-md-12">
+       <h3>{timetitle}</h3>
        <table class ="table table-responsive">
            <tr>
                <th>time</th>
@@ -12,20 +13,20 @@
                <th>Instructor</th>
            </tr>
            {timeslots}
-           <tr>
-               <td>{time}</td>
-               <td>{day}</td>
-               <td>{course}</td>
-               <td>{type}</td>
-               <td>{room}</td>
-               <td>{instructor}</td>
-           </tr>
+            <tr>
+                <td>{time}</td>
+                <td>{day}</td>
+                <td>{course}</td>
+                <td>{type}</td>
+                <td>{room}</td>
+                <td>{instructor}</td>
+            </tr>
            {/timeslots}
        </table>
     </div>
 
-    <div class = "table-responsive">
-
+    <div class = "col-md-12">
+        <h3>{daytitle}</h3>
        <table class ="table">
            <tr>
                <th>time</th>
@@ -48,8 +49,8 @@
        </table>
     </div>
 
-     <div class = "table-striped">
-
+     <div class = "col-md-12">
+         <h3>{coursetitle}</h3>
        <table class ="table">
            <tr>
                <th>time</th>

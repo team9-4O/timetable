@@ -21,7 +21,11 @@ class Welcome extends Application {
 
     function index() {
 
-        $this->data['title'] = 'TimeTable';
+        $this->data['title'] = 'ALL TimeTable';
+        $this->data['timetitle'] = 'TimeTable by class time';
+        $this->data['daytitle'] = 'TimeTable by day';
+        $this->data['coursetitle'] = 'TimeTable by course';
+
         $this->data['pagebody'] = 'timetable';
         $this->load->model('timetable');
         $this->data['days'] = $this->timetable->getDays();

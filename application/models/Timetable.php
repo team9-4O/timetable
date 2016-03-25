@@ -16,7 +16,7 @@ class Timetable extends MY_Model {
          $this->xml = simplexml_load_file(DATA_FOLDER . 'schedule' . XMLSUFFIX, "SimpleXMLElement", 
                  LIBXML_NOENT);
     
-        echo print_r($this->xml);    
+
         foreach($this->xml->days->dayinner as $day){
             foreach($day->booking as $book){
                 $book->day = $day['code'];
