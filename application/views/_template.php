@@ -15,9 +15,13 @@ if (!defined('APPPATH'))
         <div class="container">
             <div id="topstuff" class="row">
                 <p></p>
-            </div>           
+            </div>  
+            <div>
+                {showsearch}
+            </div>
             <div id="content">
                 <h1>{title}</h1>
+                            
                 {content}
             </div>
             <div id="footer" class="span12">
