@@ -16,7 +16,7 @@ class Timetable extends MY_Model {
          $this->xml = simplexml_load_file(DATA_FOLDER . 'schedule' . XMLSUFFIX, "SimpleXMLElement", 
                  LIBXML_NOENT);
     
-        echo print_r($this->xml);    
+        //echo print_r($this->xml);    
         foreach($this->xml->days->dayinner as $day){
             foreach($day->booking as $book){
                 $book->day = $day['code'];
@@ -24,6 +24,7 @@ class Timetable extends MY_Model {
                 
             }
         }
+        //print_r($this->daysofweek);
          foreach($this->xml->courses->courseinner as $course){
             foreach($course->booking as $book){
                 $book->course = $course['name'];
@@ -44,7 +45,16 @@ class Timetable extends MY_Model {
                     
                    
     }
- 
+    public function dropdownDays(){
+        $ret = array("Monday"=>"Monday", "Tuesday"=>"Tuesday", "Wednesday"=>"Wednesday", "Thursday"=>"Thursday",
+            "Friday"=>"Friday", "Saturday"=>"Saturday", "Sunday"=>"Sunday");
+        return $ret;
+    }
+    public function dropdownTimes(){
+        $ret = array("830"=>"830", "930"=>"930", "1030"=>"1030", "1130"=>"1130", "1230"=>"1230",
+            "1330"=>"1330", "1430"=>"1430", "1530"=>"1530", "1630"=>"1630");
+        return $ret;
+    }
     public function getDays(){
         return $this->daysofweek;
     }
@@ -55,20 +65,21 @@ class Timetable extends MY_Model {
         return $this->timeslots;
     }
     
-    public function searchByDay($day, $time){
+    public function searchByDay($dayok, $time){
         $day = array();
         foreach($this->daysofweek as $book){
-            if($book->day == $day  && $this->time == $time){
+            if($book->day == $dayok  && $book->time == $time){
                $day[] = $book;
             }
         }
+       
         return $day;
     }
     
     public function searchByCourse($day, $time){
         $course = array();
-        foreach($this->course as $book){
-            if($book->day == $day  && $this->time == $time){
+        foreach($this->courses as $book){
+            if($book->day == $day  && $book->time == $time){
                $course[] = $book;
             }
         }
@@ -77,7 +88,7 @@ class Timetable extends MY_Model {
     public function searchByTimeslot($day, $time){
         $times = array();
         foreach($this->timeslots as $book){
-            if($book->day == $day  && $this->time == $time){
+            if($book->day == $day  && $book->time == $time){
                $times[] = $book;
             }
         }
@@ -85,7 +96,7 @@ class Timetable extends MY_Model {
     }
 }
 
-class Booking{
+class Booking extends CI_Model {
    public $instructor;
    public $room;
    public $type;
@@ -96,12 +107,12 @@ class Booking{
      public function __construct($booking){
 
        
-       $this->instructor = $booking->instructor;
-       $this->room = $booking->room;
-       $this->type = $booking->type;
-       $this->time = $booking->time;
-       $this->day = $booking->day;
-       $this->course = $booking->course;
+       $this->instructor = (string)$booking->instructor;
+       $this->room = (string)$booking->room;
+       $this->type = (string)$booking->type;
+       $this->time = (string)$booking->time;
+       $this->day = (string)$booking->day;
+       $this->course = (string)$booking->course;
    }
    
 }
