@@ -1,5 +1,5 @@
-<table class = "table">
-    <th colspan="2">{howdoiparsethis}</th>
+<table>
+    <th>{howdoiparsethis}</th>
         <tr>
             <td>Instructor</td>
             <td>{instructor}</td>
