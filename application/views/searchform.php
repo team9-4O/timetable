@@ -1,4 +1,4 @@
-<form  method="POST" action="/Welcome/search">
+<form  method="POST" action="">
   <div class="form-group">
     {daySearch}
     {periodSearch}

@@ -34,6 +34,7 @@ class Application extends CI_Controller {
         $this->data['menubar'] = $this->parser->parse('_menubar', $this->config->item('menu_choices'),true);
         $this->data['content'] = $this->parser->parse($this->data['pagebody'], $this->data, true);
         $data = array();
+        
         $data['daySearch'] = form_dropdown('day', $this->timetable->dropdownDays());
         $data['periodSearch'] = form_dropdown('period', $this->timetable->dropdownTimes());
         $ok = $this->parser->parse('searchform', $data, true);
