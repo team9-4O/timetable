@@ -17,10 +17,13 @@ class Welcome extends Application {
     function index() {
 
         $this->data['title'] = 'TimeTable';
-        $this->data['pagebody'] = 'singlebooking';
         $this->load->model('timetable');
         $this->load->helper('form');
-        
+        $this->data['pagebody'] = 'timetable';
+        $this->data['days'] = $this->timetable->getDays();
+        $this->data['timeslots'] = $this->timetable->getTimes();
+        $this->data['bycourse'] = $this->timetable->getCourses();
+
         
         $this->render();
     }
