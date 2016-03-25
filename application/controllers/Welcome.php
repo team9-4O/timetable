@@ -16,7 +16,12 @@ class Welcome extends Application {
     }
     function index() {
 
-        $this->data['title'] = 'TimeTable';
+
+        $this->data['title'] = 'ALL TimeTable';
+        $this->data['timetitle'] = 'TimeTable by class time';
+        $this->data['daytitle'] = 'TimeTable by day';
+        $this->data['coursetitle'] = 'TimeTable by course';
+
         $this->load->model('timetable');
         $this->load->helper('form');
         $this->data['pagebody'] = 'timetable';
