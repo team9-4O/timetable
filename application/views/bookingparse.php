@@ -1,5 +1,5 @@
-<h2>Booking</h2>
-<table>
+<table class = "table">
+    <th colspan="2">{howdoiparsethis}</th>
         <tr>
             <td>Instructor</td>
             <td>{instructor}</td>
